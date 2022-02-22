@@ -1,5 +1,5 @@
 class Bank {
-    constructor(date = new Date("February 22, 2022"), deposit, withdraw, balance = 0) {
+    constructor(date = new Date("February 22, 2022"), deposit = 0, withdraw = 0, balance = 0) {
         this.date = date,
         this.deposit = deposit,
         this.withdraw = withdraw, 
@@ -7,7 +7,7 @@ class Bank {
     }
 
     statement() {
-        return this.date, this.deposit, this.withdraw, this.balance;
+        return "date || credit || debit || balance " + this.date + " || " + this.deposit + " || " + this.withdraw + " || " + this.balance; 
     } 
 
     transactionDate() {
